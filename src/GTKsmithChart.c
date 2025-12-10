@@ -1355,7 +1355,7 @@ drawSmithChart( cairo_t *cr, gdouble centerX, gdouble centerY,
  * \param cr                pointer to the cairo context
  * \param width             width of the drawing area
  * \param height            height of the drawing area
- * \param pOptions          pointer to options settings
+ * \param user_data         pass pointer to user data from the main application
  *
  */
 static void
@@ -1447,7 +1447,7 @@ CB_drawingArea_SmithS11 (GtkDrawingArea *wDrawingArea, cairo_t *cr, gint width, 
  *
  *
  * \param wApplication  pointer to the GtkApplication widget
- * \param gpOptions     pointer to the array of option
+ * \param user_data     pass pointer to user data from the main application
  */
 static void CB_activate (GtkApplication *wApplication, gpointer user_data) {
     GtkWidget *window;
