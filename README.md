@@ -10,12 +10,12 @@ the chart can be used to simultaneously display multiple parameters including im
 scattering parameters, noise figure circles, constant gain contours and regions for unconditional stability.
 
 The code provided can be used to create an impedance (Z) Smith chart, a susceptace (Y) chart or one combining both.
-To mimic the ZY-01-N chart published by Analog Instruments Company, a 'sparce' Y chart may be overlayed on a standard Z chart.
+To mimic the ZY-01-N chart published by Analog Instruments Company, a 'sparse' Y chart may be overlayed on a standard Z chart.
 
 Routines are provided to plot lines, points, connected lines (from a series of cordinates in gamma space) or
 a smooth bezier curve from a series of cordinates in gamma space.
 
-The user incorporates one or more ```GtkDrawing``` widgets and connects the drawing callback to a routine
+The user incorporates one or more ```GtkDrawing``` widgets, in the GTK4 application, and connects the drawing callback to a routine
 that creates the Smith chart and adds any curves or other annotations. Each ```GtkDrawing``` can have a
 different set of options.
 
